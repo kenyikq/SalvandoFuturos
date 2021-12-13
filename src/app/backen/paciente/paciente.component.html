@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="subtitulo">
+      Registro
+    </ion-title>
+    
+      
+    <ion-buttons slot="start">
+     <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 class ="subtitulo p-3 encabezado"> Ingrese sus datos</h3>
+  <ion-item>
+    <ion-label   position="floating" class="normal">Nombre:</ion-label>
+    <ion-input [(ngModel)]="newPaciente.nombre" class="normal" type="string" inputmode="text" placeholder="Introduzca su Nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label   position="floating" class="normal">Apellidos:</ion-label>
+    <ion-input [(ngModel)]="newPaciente.apellidos" class="normal" type="string" inputmode="text" placeholder="Introduzca su Nombre"></ion-input>
+  </ion-item>
+
+
+  <ion-list>
+       <ion-item>
+      <ion-label  class="normal">Tipo de identificación</ion-label>
+      <ion-select [(ngModel)]="newPaciente.tipoDoc" placeholder="Selecciona">
+        <ion-select-option class="normal" value="Cedula">Cedula</ion-select-option>
+        <ion-select-option class="normal" value="Pasaporte">Pasaporte</ion-select-option>
+      </ion-select>
+    </ion-item>
+    </ion-list>
+   
+
+  <ion-item>
+    <ion-label  position="floating" class="normal">Número Id:</ion-label>
+    <ion-input [(ngModel)]="newPaciente.docNum" class="normal" type="numeric" inputmode="numeric" placeholder="Introduzca su numero de identificación"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  position="floating" class="normal">Contacto:</ion-label>
+    <ion-input [(ngModel)]="newPaciente.contacto" class="normal" type="tel" inputmode="tel" placeholder="Introduzca su numero de contacto"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  position="floating" class="normal">Correo:</ion-label>
+    <ion-input [(ngModel)]="newPaciente.correo" class="normal" type="email" inputmode="email" placeholder="Introduzca su correo electrónico"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  position="floating" class="normal">Clave de Acceso:</ion-label>
+    <ion-input [(ngModel)]="newPaciente.clave" class="normal" type="password" inputmode="password" placeholder="Introduzca su clave de acceso"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label  position="floating" class="normal">Confirmar Clave de Acceso:</ion-label>
+    <ion-input [(ngModel)]="claveCon"  class="normal" type="password" inputmode="password" placeholder="Repita su clave de acceso"></ion-input>
+  </ion-item>
+
+  <ion-button shape="round" (click)="guardarDatos()"  style="margin:30px" color="dark"  >Guardar</ion-button>  
+  <ion-button  style="margin:30px" color="dark" >Cancelar</ion-button>  
+  
+  
+</ion-content>

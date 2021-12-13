@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end" >
+      <ion-button [routerLink]= "['/registro']" (click)="seleccionA()" >
+        <ion-icon color="primary" name="person-circle-outline" slot="icon-only"></ion-icon>
+        
+      </ion-button>
+      </ion-buttons>
+    <ion-title style="text-align: center; margin-right: 5%;"  class="subtitulo">
+      Home
+    </ion-title>
+    
+      
+    <ion-buttons slot="start">
+     <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  
+    
+  </ion-toolbar>
+  
+  
+   
+</ion-header>
+
+<ion-content>
+
+  <div class= "contenedor" >
+    <div class="hijo">
+   <div><h1>Salvando Futuros</h1>
+   </div>
+    <p style="padding-top: 41px;" class= "normal">Salvando Futuros es una aplicación de la fundación Acción Callejera – Fundación Educativa, Inc. creada con el fin de reportar casos de abusos a los infantes de la ciudad de Santiago, República Dominicana.</p>
+   
+    
+    <ion-button mode="md" size= "large" shape="round" color="clear" (click)="goAnOtherPage('/reporte')" >
+      Reportar Abuso
+  </ion-button>
+
+  <div style="margin-top: 50px;">
+  </div>
+   <p class= "normal">Si deseas tener un seguimiento de tus casos reportados es necesario crear un usuario.</p>
+   <ion-button mode="md" size= "large" shape="round" color="clear" (click)="goAnOtherPage('/registro')" >
+   Crear usuario
+</ion-button>
+  </div>
+
+ 
+  </div>
+
+  
+
+</ion-content>

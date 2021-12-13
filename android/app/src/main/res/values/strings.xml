@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Salvando Futuros</string>
+    <string name="title_activity_main">Salvando Futuros</string>
+    <string name="package_name">com.uapa.SalvandoFuturos</string>
+    <string name="custom_url_scheme">com.uapa.SalvandoFuturos</string>
+</resources>

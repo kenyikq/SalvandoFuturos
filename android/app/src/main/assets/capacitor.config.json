@@ -1,0 +1,18 @@
+{
+	"appId": "com.uapa.SalvandoFuturos",
+	"appName": "Salvando Futuros",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"cordova": {
+		"preferences": {
+			"ScrollEnabled": "false",
+			"BackupWebStorage": "none",
+			"SplashMaintainAspectRatio": "true",
+			"FadeSplashScreenDuration": "300",
+			"SplashShowOnlyFirstTime": "false",
+			"SplashScreen": "screen",
+			"SplashScreenDelay": "3000"
+		}
+	}
+}

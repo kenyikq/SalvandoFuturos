@@ -1,0 +1,72 @@
+ion-content{
+    --background: linear-gradient(0deg,rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+    url("/assets/foto.jpg") no-repeat center center / cover;
+}
+
+
+.contenedor {
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+h1{
+  text-align:center;
+  color:white;
+  padding: 7px;
+  font-size: 37px;
+  text-shadow: black;
+  background: #3880ff;
+  opacity: 89%;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  @media screen and (max-width:590px) {
+    font-size: 25px;
+    
+}
+  
+
+}
+
+h3{
+text-align:center;
+color:wheat;
+padding: 30px;
+font-size: 30px;
+text-shadow: black;
+@media screen and (max-width:590px) {
+  font-size: 20px;
+  
+}
+}
+
+p {
+  font-size: 25px;
+  color: wheat;
+  text-align: center;
+  @media screen and (max-width:590px) {
+    font-size: 16px;}
+}
+h2{
+   margin-top: 48px;
+    font-size: 30px;
+    color: white;
+    @media screen and (max-width:590px) {
+      font-size: 21px;}
+}
+.hijo {
+  
+position: absolute;
+top: 7%;
+left: 5%;
+right:5%;
+margin: -5px 0 0 -5px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+text-align: center;
+
+}
